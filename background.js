@@ -27,9 +27,9 @@ function inMyBR(myBRPage)
     return (results.length > 0);
 }
 
-function getFirstResult(DOM)
+function getFirstResult(myBRPage)
 {
-    var result = myBRPage.getElementsByClassName('col-md-10')[0].outerHTML;
+    var result = myBRPage.getElementsByClassName('col-md-10 desk-automation-users')[0].innerText;
     console.log(result);
     return result;
 }

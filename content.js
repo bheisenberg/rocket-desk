@@ -10,8 +10,8 @@ function update(sendResponse)
         var url = "http://my.blackrocket.com/users?search=" + name;
         var code = '<a href=' +url+ ' target="_blank">' + text + '</a>';
         document.getElementsByClassName("name ng-binding")[0].innerHTML = code;
-        sendResponse(inMyBR(getDOM(url)));
-        //sendResponse(url);
+        //sendResponse(inMyBR(getDOM(url)));
+        sendResponse(url);
     }
 }
 
